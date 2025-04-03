@@ -1,0 +1,17 @@
+def extract_temp():
+    with open('read_file.txt','r') as fileopen:
+        output=fileopen.readline()
+    
+    number=''
+    for char in output:
+        if char.isdigit():
+            number+=char
+        elif number:
+            break
+        
+    if number:
+        print(number)
+            
+            
+extract_temp()
+        
