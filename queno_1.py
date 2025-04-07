@@ -1,6 +1,8 @@
-def reduce_spaces():
-    with open ('text_file.txt','r') as input_file:
-        output=input_file.readline()
-        combine=' '.join(output.split())
-        print(combine)
-reduce_spaces()
+check=False
+def check_quotes():
+    with open ('open_file.txt','w') as openfile:
+        file_name=openfile.write("Today’s high temperature will be 75 degrees")
+        print(file_name)
+check_quotes()
+                                 
+    
